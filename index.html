@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Angel Gonzalez's portfolio website" />
+    <meta name="author" content="Angel Gonzalez" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1444fbb926.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Angel's Space</title>
   </head>
   <body>
@@ -13,10 +19,10 @@
         <nav>
           <img src="assets/young-face.jpeg" class="logo" />
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Home</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header-text">
@@ -24,9 +30,119 @@
             UX/UI Designer, Fullstack Software, Aspiring Enviornmental Data
             Analyst
           </p>
-          <h1>Hello! I'm Angel Gonzalez and am located in Los Angeles, CA!</h1>
+          <h1>
+            Hello! I'm <span>Angel Gonzalez</span> <br />located in Los Angeles,
+            CA!
+          </h1>
         </div>
       </div>
     </div>
+    <!----------about--------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/army.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              MAKING ALL THIS TYPING INSTEAD OF LERUM IPSUM AND IM TYPING AS IM
+              WATCHING THE VIDEIO WHOPEFULLY THIS MAKES SENSE AHAAHAHAHAAAAA
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('expereience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing web/app interfaces</li>
+                <li><span>Web Development</span><br />Web app development</li>
+                <li>
+                  <span>App Development</span><br />React Native & Swift
+                  projects
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="expereience">
+              <ul>
+                <li>
+                  <span>2023 - Current</span><br />Graduated from Fullstack
+                  Academy and currently pursuing a career while growing my
+                  personal experience with side projects.
+                </li>
+                <li>
+                  <span>2019 - 2023</span><br />Learned many soft skills such as
+                  leadership, team cohesion, problem solving, public speaking,
+                  etc.
+                </li>
+                <li>
+                  <span>2017 - 2019</span><br />Worked at starbucks while
+                  pursuing general education.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023</span><br />Fullstack Academy with certificate in
+                  Full Stack web development.
+                </li>
+                <li>
+                  <span>2023</span><br />Created an E-commerce site with a
+                  secure backend for a personal user login expereience.
+                </li>
+                <li>
+                  <span>2023</span><br />Created a mobile app for both andriod
+                  and IOS utulizing React Native and Google API.
+                </li>
+                <li><span>2018</span><br />Pasadena City College</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------services--------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+        <div>
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Fullstack Web Developer</h2>
+          <p>
+            IM GONNA KEEO MAKING MY OWN LOREM IPSUM AND I IM IM SO TIRED BUT I
+            NEED MONEY PLSLSSSS
+          </p>
+          <a href="#">learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-eye"></i>
+          <h2>UX/UI Design</h2>
+          <p>
+            IM GONNA KEEO MAKING MY OWN LOREM IPSUM AND I IM IM SO TIRED BUT I
+            NEED MONEY PLSLSSSS
+          </p>
+          <a href="#">learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-mobile-screen"></i>
+          <h2>App Design</h2>
+          <p>
+            IM GONNA KEEO MAKING MY OWN LOREM IPSUM AND I IM IM SO TIRED BUT I
+            NEED MONEY PLSLSSSS
+          </p>
+          <a href="#">learn more</a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
