@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Get in touch with Angel Gonzalez." />
+    <meta name="author" content="Angel Gonzalez" />
+    <title>Contact | Angel's Space</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/1444fbb926.js" crossorigin="anonymous" defer></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav aria-label="Main">
+          <a href="index.html" class="logo-link" aria-label="Home">
+            <img src="assets/young-face.jpeg" class="logo" alt="Portrait of Angel Gonzalez" />
+          </a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gis-lab.html">GIS Lab</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact</h1>
+              <p>
+                Want to talk about GIS, environmental data, or a project? Send
+                a message and I'll reply as soon as I can.
+              </p>
+              <ul class="contact-links">
+                <li>
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                  <a href="mailto:gonzalez.angel8991@gmail.com">gonzalez.angel8991@gmail.com</a>
+                </li>
+                <li>
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <a href="https://github.com/angelgonzalez98" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </li>
+                <li>
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                  <a href="https://www.linkedin.com/in/angel-gonzalez-ux-ui" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-right">
+              <form id="contact-form" action="https://formspree.io/f/mrppvjbk" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required />
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required />
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <button type="submit" class="btn">Send message</button>
+                <p id="form-status" role="status" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year">2026</span> Angel Gonzalez</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

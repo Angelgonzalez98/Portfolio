@@ -2,176 +2,77 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Angel Gonzalez's portfolio website" />
+    <meta name="description" content="Angel Gonzalez's portfolio: a Cal Poly Pomona student exploring environmental science, GIS, and code." />
     <meta name="author" content="Angel Gonzalez" />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/1444fbb926.js"
-      crossorigin="anonymous"
-    ></script>
     <title>Angel's Space</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/1444fbb926.js" crossorigin="anonymous" defer></script>
   </head>
   <body>
-    <div id="header">
+    <header id="header" class="hero">
       <div class="container">
-        <nav>
-          <img src="assets/young-face.jpeg" class="logo" />
+        <nav aria-label="Main">
+          <a href="index.html" class="logo-link" aria-label="Home">
+            <img src="assets/young-face.jpeg" class="logo" alt="Portrait of Angel Gonzalez" />
+          </a>
           <ul>
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Projects</a></li>
-            <!-- <li><a href="#Contact">Contact</a></li> ADD THIS LATER-->
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gis-lab.html">GIS Lab</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <div class="header-text">
-          <p>
-            UX/UI Designer, Fullstack Software, Aspiring Enviornmental Data
-            Analyst
-          </p>
+          <p>Cal Poly Pomona junior exploring environmental science, GIS, and code</p>
           <h1>
-            Hello! I'm <span>Angel Gonzalez</span> <br />located in Los Angeles,
-            CA!
+            Hello! I'm <span>Angel Gonzalez</span> <br />located in Los Angeles, CA!
           </h1>
-        </div>
-      </div>
-    </div>
-    <!----------about--------->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="assets/army.jpeg" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Mept1</h1>
-            <p>
-              MAKING ALL THIS TYPING INSTEAD OF LERUM IPSUM AND IM TYPING AS IM
-              WATCHING THE VIDEIO WHOPEFULLY THIS MAKES SENSE AHAAHAHAHAAAAA
-            </p>
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
-              <p class="tab-links" onclick="opentab('Experience', event)">Experience</p>
-              <p class="tab-links" onclick="opentab('education', event)">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>UI/UX</span><br />Designing web/app interfaces</li>
-                <li><span>Web Development</span><br />Web app development</li>
-                <li><span>App Development</span><br />React Native & Swift
-                  projects</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="Experience">
-              <ul>
-                <li>
-                  <span>2023 - Current</span><br />Graduated from Fullstack
-                  Academy and currently pursuing a career while growing my
-                  personal Experience with side projects.
-                </li>
-                <li>
-                  <span>2019 - 2023</span><br />Learned many soft skills such as
-                  leadership, team cohesion, problem solving, public speaking,
-                  etc.
-                </li>
-                <li>
-                  <span>2017 - 2019</span><br />Worked at starbucks while
-                  pursuing general education.
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>2023</span><br />Fullstack Academy with certificate in
-                  Full Stack web development.
-                </li>
-                <li>
-                  <span>2023</span><br />Created an E-commerce site with a
-                  secure backend for a personal user login Experience.
-                </li>
-                <li>
-                  <span>2023</span><br />Created a mobile app for both andriod
-                  and IOS utulizing React Native and Google API.
-                </li>
-                <li><span>2018</span><br />Pasadena City College</li>
-              </ul>
-            </div>
+          <div class="hero-actions">
+            <a href="gis-lab.html" class="btn btn-inline">Explore the GIS Lab</a>
+            <a href="contact.html" class="btn btn-inline btn-quiet">Get in touch</a>
           </div>
         </div>
       </div>
-    </div>
-    <!---------services--------->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-        <div>
-          <i class="fa-solid fa-laptop-code"></i>
-          <h2>Fullstack Web Developer</h2>
-          <p>
-          lorem ipsum project one?
+    </header>
+
+    <main>
+      <section id="intro">
+        <div class="container">
+          <h2 class="sub-title">What I'm working on</h2>
+          <p class="section-note">
+            I'm learning to read the environment through data: building maps,
+            pulling in public datasets, and picking up new programming
+            languages along the way.
           </p>
-          <a href="#">Learn more</a>
+          <div class="link-cards">
+            <a class="link-card" href="gis-lab.html">
+              <i class="fa-solid fa-earth-americas" aria-hidden="true"></i>
+              <h3>GIS Lab</h3>
+              <p>A live map of recent earthquakes and air quality across Southern California.</p>
+              <span>Open the GIS Lab</span>
+            </a>
+            <a class="link-card" href="projects.html">
+              <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+              <h3>Projects</h3>
+              <p>Everything I've built, pulled straight from my GitHub.</p>
+              <span>See projects</span>
+            </a>
+            <a class="link-card" href="about.html">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <h3>About</h3>
+              <p>Where I'm studying, what I've built, and where I'm headed.</p>
+              <span>Read more</span>
+            </a>
+          </div>
         </div>
-        <div>
-          <i class="fa-solid fa-eye"></i>
-          <h2>UX/UI Design</h2>
-          <p>
-            project two?
-          </p>
-          <a href="#">Learn more</a>
-        </div>
-        <div>
-          <i class="fa-solid fa-mobile-screen"></i>
-          <h2>App Design</h2>
-          <p>
-            project three?
-          </p>
-          <a href="#">Learn more</a>
-        </div>
-      </div>
-    </div>
-    <!-------------portfolio--------->
-    <div id="portfolio">
-    <div class="container">
-      <h1 class="sub-title">My Work</h1>
-      <div class="work-list">
-        <div class="work">
-        <img src="assets/work-1.jpeg" >
-        <div class="layer">
-          <h3>Social Media App</h3>
-          <p>
-            I GOT CAYENNE PEPPER IN MY EYES AND IT BURRRRNNNSSSS WHAHAWHAHAHWAHWHAWHAHAHW
-          </p>
-          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="assets/work-2.jpeg" >
-        <div class="layer">
-          <h3>Music App</h3>
-          <p>
-            I GOT CAYENNE PEPPER IN MY EYES AND IT BURRRRNNNSSSS WHAHAWHAHAHWAHWHAWHAHAHW
-          </p>
-          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="assets/work-3.jpeg" >
-        <div class="layer">
-          <h3>Online Shopping App</h3>
-          <p>
-            I GOT CAYENNE PEPPER IN MY EYES AND IT BURRRRNNNSSSS WHAHAWHAHAHWAHWHAWHAHAHW
-          </p>
-          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-      </div>
-      <a href="#" class="btn">See more</a>
-    </div>
-    <div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year">2026</span> Angel Gonzalez</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

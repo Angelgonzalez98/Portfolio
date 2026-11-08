@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projects by Angel Gonzalez, pulled live from GitHub." />
+    <meta name="author" content="Angel Gonzalez" />
+    <title>Projects | Angel's Space</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/1444fbb926.js" crossorigin="anonymous" defer></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav aria-label="Main">
+          <a href="index.html" class="logo-link" aria-label="Home">
+            <img src="assets/young-face.jpeg" class="logo" alt="Portrait of Angel Gonzalez" />
+          </a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gis-lab.html">GIS Lab</a></li>
+            <li><a href="projects.html" aria-current="page">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="projects">
+        <div class="container">
+          <h1 class="sub-title">Projects</h1>
+          <p class="section-note">Pulled live from my GitHub, most recent activity first.</p>
+          <div id="lang-summary" class="lang-summary" hidden></div>
+          <div id="repo-filters" class="chips" role="group" aria-label="Filter by language" hidden></div>
+          <div class="repo-list" id="repo-list" aria-live="polite">
+            <p class="map-message">Loading projects...</p>
+          </div>
+          <noscript>
+            <p class="section-note">Turn on JavaScript to see projects here, or visit my GitHub.</p>
+          </noscript>
+          <a href="https://github.com/angelgonzalez98" class="btn" target="_blank" rel="noopener noreferrer">See all on GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year">2026</span> Angel Gonzalez</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About Angel Gonzalez: Cal Poly Pomona junior learning programming languages, environmental science, and GIS." />
+    <meta name="author" content="Angel Gonzalez" />
+    <title>About | Angel's Space</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/1444fbb926.js" crossorigin="anonymous" defer></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav aria-label="Main">
+          <a href="index.html" class="logo-link" aria-label="Home">
+            <img src="assets/young-face.jpeg" class="logo" alt="Portrait of Angel Gonzalez" />
+          </a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="gis-lab.html">GIS Lab</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="assets/army.jpeg" alt="Angel Gonzalez" loading="lazy" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About me</h1>
+              <p>
+                I'm a junior at Cal Poly Pomona, learning new programming
+                languages and getting into environmental science and GIS. I
+                started with web and app development, and now I'm pointing
+                those skills at environmental data and mapping.
+              </p>
+              <div class="tab-titles" role="tablist" aria-label="About me">
+                <button class="tab-links active-link" role="tab" aria-selected="true" aria-controls="skills" data-tab="skills">Skills</button>
+                <button class="tab-links" role="tab" aria-selected="false" aria-controls="experience" data-tab="experience">Experience</button>
+                <button class="tab-links" role="tab" aria-selected="false" aria-controls="education" data-tab="education">Education</button>
+              </div>
+              <div class="tab-contents active-tab" id="skills" role="tabpanel">
+                <ul>
+                  <li><span>Focus</span><br />Environmental science and GIS</li>
+                  <li><span>Programming</span><br />JavaScript, React, React Native, and Swift from past projects</li>
+                  <li><span>Learning</span><br />More programming languages, with an eye on tools for data and mapping</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience" role="tabpanel">
+                <ul>
+                  <li><span>2023</span><br />Built an e-commerce site with a secure backend and personal user logins.</li>
+                  <li><span>2023</span><br />Built a mobile app for Android and iOS using React Native and the Google API.</li>
+                  <li><span>2019 - 2023</span><br />Built soft skills including leadership, team cohesion, problem solving, and public speaking.</li>
+                  <li><span>2017 - 2019</span><br />Worked at Starbucks while pursuing general education.</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education" role="tabpanel">
+                <ul>
+                  <li><span>Now</span><br />Cal Poly Pomona, junior</li>
+                  <li><span>2023</span><br />Fullstack Academy, certificate in Full Stack Web Development</li>
+                  <li><span>2018</span><br />Pasadena City College</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year">2026</span> Angel Gonzalez</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

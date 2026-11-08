@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A live map of recent Southern California earthquakes and air quality, built with public data." />
+    <meta name="author" content="Angel Gonzalez" />
+    <title>GIS Lab | Angel's Space</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/1444fbb926.js" crossorigin="anonymous" defer></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav aria-label="Main">
+          <a href="index.html" class="logo-link" aria-label="Home">
+            <img src="assets/young-face.jpeg" class="logo" alt="Portrait of Angel Gonzalez" />
+          </a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gis-lab.html" aria-current="page">GIS Lab</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="map">
+        <div class="container">
+          <h1 class="sub-title">GIS Lab</h1>
+          <p class="section-note">
+            Live data on a map of Southern California, loaded fresh each time
+            you open the page. Click anywhere on the map to check the air
+            quality at that spot.
+          </p>
+
+          <div class="map-controls">
+            <label>
+              Show earthquakes from
+              <select id="quake-days">
+                <option value="7">the last 7 days</option>
+                <option value="30" selected>the last 30 days</option>
+                <option value="90">the last 90 days</option>
+              </select>
+            </label>
+            <label>
+              with magnitude
+              <select id="quake-mag">
+                <option value="2.5" selected>2.5 and up</option>
+                <option value="3">3 and up</option>
+                <option value="4">4 and up</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="map-layout">
+            <div id="live-map" role="region" aria-label="Map of recent earthquakes and air quality in Southern California">
+              <p class="map-message">Loading map...</p>
+            </div>
+            <div class="map-panel">
+              <div class="stat-card">
+                <h2>Air quality at Cal Poly Pomona</h2>
+                <div class="aqi-row">
+                  <span class="aqi-value" id="aqi-value">--</span>
+                  <span class="aqi-label" id="aqi-label">Loading...</span>
+                </div>
+                <p class="stat-detail" id="aqi-detail"></p>
+              </div>
+              <div class="stat-card">
+                <h2>Earthquakes</h2>
+                <div class="aqi-row">
+                  <span class="aqi-value" id="quake-count">--</span>
+                  <span class="aqi-label" id="quake-label"></span>
+                </div>
+                <p class="stat-detail" id="quake-detail">Loading...</p>
+              </div>
+              <div class="stat-card">
+                <h2>Air quality scale</h2>
+                <ul class="aqi-legend" id="aqi-legend"></ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="sources">
+            <h2>Where the data comes from</h2>
+            <ul>
+              <li><a href="https://earthquake.usgs.gov/fdsnws/event/1/" target="_blank" rel="noopener noreferrer">USGS Earthquake Catalog</a> for earthquakes. Marker size shows magnitude.</li>
+              <li><a href="https://open-meteo.com/en/docs/air-quality-api" target="_blank" rel="noopener noreferrer">Open-Meteo Air Quality API</a> for air quality. These are modeled estimates, not readings from a single sensor.</li>
+              <li><a href="https://www.usgs.gov/programs/national-geospatial-program/national-map" target="_blank" rel="noopener noreferrer">USGS The National Map</a> and <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> for the base maps and rivers and lakes layer.</li>
+            </ul>
+            <p>Use the layers button in the map's top right corner to switch base maps or turn layers on and off.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year">2026</span> Angel Gonzalez</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
